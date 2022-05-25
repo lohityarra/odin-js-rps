@@ -6,3 +6,10 @@ function computerPlay (){
 
 }
 
+function userPlay(){
+    let input_value = prompt('Enter your value:').toLowerCase();
+    return input_value
+
+}
+
+console.log(userPlay());
