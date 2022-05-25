@@ -14,27 +14,27 @@ function userPlay(){
 function game(playerSelection,computerSelection){
     if (playerSelection === "rock") {
         if (computerSelection === "rock") {
-            return "Draw!";
+            return "It's a Draw!";
         } else if (computerSelection === "paper") {
-            return "Computer wins!";
+            return "Computer wins by paper!";
         } else {
-            return "User wins!";
+            return "User wins on scissors!";
         }
     } else if (playerSelection === "paper") {
         if (computerSelection === "rock") {
-            return "User wins!";
+            return "User wins on rock!";
         } else if (computerSelection === "paper") {
-            return "Draw!";
+            return "It's a Draw!";
         } else {
-            return "Computer wins!";
+            return "Computer wins with scissors!";
         }
     } else {
         if (computerSelection === "rock") {
-            return "Computer wins!";
+            return "Computer wins with rock!";
         } else if (computerSelection === "paper") {
-            return "User wins!";
+            return "User wins on paper!";
         } else {
-            return "Draw!";
+            return "It's a Draw!";
         }
     }
 }
@@ -42,4 +42,6 @@ function game(playerSelection,computerSelection){
     
 
 
-console.log(userPlay());
+var player = userPlay();
+var computer = computerPlay();
+var result = console.log(game(player,computer));
