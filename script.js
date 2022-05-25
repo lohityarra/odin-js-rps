@@ -40,6 +40,6 @@ function game(playerSelection,computerSelection){
 }
 
     
-}
+
 
 console.log(userPlay());
