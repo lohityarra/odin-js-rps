@@ -11,7 +11,7 @@ function userPlay(){
     return input_value
 
 }
-function game(playerSelection,computerSelection){
+function playRound(playerSelection,computerSelection){
     if (playerSelection === "rock") {
         if (computerSelection === "rock") {
             return "It's a Draw!";
@@ -39,9 +39,18 @@ function game(playerSelection,computerSelection){
     }
 }
 
+function game(){
+    for (let i=0; i<5; i++){
+    var player = userPlay();
+    var computer = computerPlay();
+    var result = console.log(playRound(player,computer));    
+    }
+    return result
     
+}
+
+    
+console.log(game());
 
 
-var player = userPlay();
-var computer = computerPlay();
-var result = console.log(game(player,computer));
+
