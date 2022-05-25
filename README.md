@@ -1,2 +1,2 @@
 # odin-js-rps
-part of odin project
+Five Games of Rock paper and scissors
