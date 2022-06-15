@@ -1,2 +1,2 @@
 # odin-js-rps
-Five Games of Rock paper and scissors
+Odin Project Rock Paper Scissor assignment
